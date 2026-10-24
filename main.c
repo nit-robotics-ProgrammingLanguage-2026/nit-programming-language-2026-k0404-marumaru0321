@@ -6,7 +6,7 @@ int main(void) {
     scanf("%d",&x);
 
     if (x == -100) {
-        printf("-inf\n");
+        printf("inf\n");/*x が -100 のとき、x + 100 = 0 となり、逆数を計算すると無限大になるので、inf と表示するようにする(githubAI談)*/
         return 0;/*x が32bit int の最大値 2147483647 なのに x + 100 を計算して、int の範囲を超えてしまうので結果がおかしくならないようにこれを入れる(githubAI談)*/
     }
     
