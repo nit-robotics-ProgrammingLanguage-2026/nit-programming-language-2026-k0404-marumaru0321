@@ -6,6 +6,7 @@ int main(void) {
     scanf("%d",&x);
 
     if (x == -100) {
+        printf("-inf\n");
         return 0;/*x が32bit int の最大値 2147483647 なのに x + 100 を計算して、int の範囲を超えてしまうので結果がおかしくならないようにこれを入れる(githubAI談)*/
     }
     
